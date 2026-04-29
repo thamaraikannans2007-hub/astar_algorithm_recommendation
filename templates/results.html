@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="top-bar">
+    <h2>Recommended Movies</h2>
+    <a href="/static/graph.html" target="_blank">
+    <button>View Graph</button>
+</a>
+</div>
+<div class="grid">
+    {% for movie in movies %}
+    <div class="card">
+        <img src="{{ movie.poster }}">
+        <h3>{{ movie.title }}</h3>
+        <p>⭐ {{ movie.rating }}</p>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>

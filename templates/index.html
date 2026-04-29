@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MovieRec 🎬</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<label class="switch">
+  <input type="checkbox" id="themeToggle">
+  <span class="slider">
+    <span class="icon sun">☀️</span>
+    <span class="icon moon">🌙</span>
+  </span>
+</label>
+
+<script src="/static/script.js"></script>
+<script src="/static/script.js"></script>
+<div id="loader" class="loader hidden"></div>
+
+<form onsubmit="showLoader()" action="/recommend">
+<div class="container">
+    <h1>🎬 A* Movie Recommendation</h1>
+
+    <form action="/recommend">
+        <input type="text" name="movie" placeholder="Enter movie name..." required>
+        <button type="submit">Find Movies</button>
+    </form>
+</div>
+</body>
+</html>
